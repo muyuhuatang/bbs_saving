@@ -71,6 +71,6 @@ if __name__=='__main__':
         page_num = str(i)
         page_url_i = url + page_num + '.shtml'  # get the full link of i_th page
 
-        html = getHtml(url)
+        html = getHtml(page_url_i)
         getText(html, page_name)
         print(str(i)+'th page has been processed')
